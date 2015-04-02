@@ -8,7 +8,7 @@ public class Spawn : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-        Destroy(Player);
+        Destroy(player);
         for (int i = 0; i < noPlayers; i++)
         {
             Instantiate(player, new Vector3(0, 1, -i-1), Quaternion.identity);
